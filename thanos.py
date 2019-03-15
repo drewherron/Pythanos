@@ -9,7 +9,6 @@ for subdir, dirs, files in os.walk('./'):
             continue
         else:
             file_list += [os.path.join(subdir,file)]
-            #file_list.append(subdir+file)
 
 def condemn(population):
     unlucky = random.sample(population, len(population)//2+1)
